@@ -1,13 +1,13 @@
 {% set name = "json-logging" %}
-{% set version = "1.5.1" %}
+{% set version = "1.6.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/json-logging-{{ version }}.tar.gz
-  sha256: 7c938750996a1cc66042b516caf75214513bcc25a105012865496864f5f3983b
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: d708f7ce02fea741b9f41b61fc8e9fdcb14a86092f2ff53061cdb07e1e11241a
 
 build:
   noarch: python
